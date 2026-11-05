@@ -1,0 +1,239 @@
+{
+ "ablation": [
+  {
+   "gates": 21240,
+   "ccx": 7600,
+   "cx": 13640,
+   "x": 0,
+   "t_count": 53200,
+   "qubits": 4716,
+   "depth": 7917,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Multiplier": 9464,
+    "Adder": 4176,
+    "Modulo": 6784,
+    "Subtractor": 816
+   },
+   "instances": {
+    "Multiplier": 104,
+    "Adder": 144,
+    "Modulo": 32,
+    "Subtractor": 24
+   },
+   "aer_mps": [],
+   "config": "V0 reuse-only (reference)"
+  },
+  {
+   "gates": 14490,
+   "ccx": 5152,
+   "cx": 9338,
+   "x": 0,
+   "t_count": 36064,
+   "qubits": 3227,
+   "depth": 4491,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Adder": 2610,
+    "Multiplier": 6188,
+    "Modulo": 4876,
+    "Subtractor": 816
+   },
+   "instances": {
+    "Adder": 90,
+    "Multiplier": 68,
+    "Modulo": 23,
+    "Subtractor": 24
+   },
+   "aer_mps": [],
+   "config": "+ identity twiddles (w=1 free)"
+  },
+  {
+   "gates": 9437,
+   "ccx": 3295,
+   "cx": 6142,
+   "x": 0,
+   "t_count": 23065,
+   "qubits": 2135,
+   "depth": 2796,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Adder": 1392,
+    "Multiplier": 3640,
+    "Modulo": 3392,
+    "Subtractor": 816,
+    "ConstMul": 197
+   },
+   "instances": {
+    "Adder": 48,
+    "Multiplier": 40,
+    "Modulo": 16,
+    "Subtractor": 24,
+    "ConstMul": 7
+   },
+   "aer_mps": [],
+   "config": "+ lookup constant multipliers (w=5,8; N^-1)"
+  },
+  {
+   "gates": 7301,
+   "ccx": 2335,
+   "cx": 4966,
+   "x": 0,
+   "t_count": 16345,
+   "qubits": 1679,
+   "depth": 2600,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Adder": 1392,
+    "CondConst": 48,
+    "Modulo": 3392,
+    "Subtractor": 816,
+    "ConstMul": 197,
+    "Multiplier": 1456
+   },
+   "instances": {
+    "Adder": 48,
+    "CondConst": 24,
+    "Modulo": 16,
+    "Subtractor": 24,
+    "ConstMul": 7,
+    "Multiplier": 16
+   },
+   "aer_mps": [],
+   "config": "+ CNOT constant selectors in MODADD/MODSUB"
+  },
+  {
+   "gates": 6545,
+   "ccx": 1951,
+   "cx": 4594,
+   "x": 0,
+   "t_count": 13657,
+   "qubits": 1615,
+   "depth": 2249,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Adder": 1392,
+    "CondConst": 48,
+    "Modulo": 3392,
+    "Subtractor": 816,
+    "ConstMul": 533,
+    "Multiplier": 364
+   },
+   "instances": {
+    "Adder": 48,
+    "CondConst": 24,
+    "Modulo": 16,
+    "Subtractor": 24,
+    "ConstMul": 19,
+    "Multiplier": 4
+   },
+   "aer_mps": [
+    {
+     "a": [
+      3,
+      7,
+      2,
+      9
+     ],
+     "b": [
+      5,
+      0,
+      11,
+      4
+     ],
+     "got": [
+      0,
+      12,
+      1,
+      4
+     ],
+     "ok": true,
+     "seconds": 7.7
+    },
+    {
+     "a": [
+      8,
+      10,
+      1,
+      6
+     ],
+     "b": [
+      3,
+      3,
+      6,
+      6
+     ],
+     "got": [
+      4,
+      5,
+      0,
+      12
+     ],
+     "ok": true,
+     "seconds": 7.3
+    },
+    {
+     "a": [
+      2,
+      12,
+      10,
+      9
+     ],
+     "b": [
+      5,
+      7,
+      1,
+      8
+     ],
+     "got": [
+      10,
+      7,
+      0,
+      0
+     ],
+     "ok": true,
+     "seconds": 7.2
+    }
+   ],
+   "config": "+ lookup fold multiplier hi*c  (= V1)"
+  },
+  {
+   "gates": 21240,
+   "ccx": 7600,
+   "cx": 13640,
+   "x": 0,
+   "t_count": 53200,
+   "qubits": 4716,
+   "depth": 7917,
+   "tests": 401,
+   "failures": 0,
+   "block_gates": {
+    "Multiplier": 9464,
+    "Adder": 4176,
+    "Modulo": 6784,
+    "Subtractor": 816
+   },
+   "instances": {
+    "Multiplier": 104,
+    "Adder": 144,
+    "Modulo": 32,
+    "Subtractor": 24
+   },
+   "aer_mps": [],
+   "config": "regression: all switches off"
+  }
+ ],
+ "v0_regression_matches": true,
+ "savings_v1_vs_v0": {
+  "gates": 69.2,
+  "ccx": 74.3,
+  "t_count": 74.3,
+  "qubits": 65.8,
+  "depth": 71.6
+ }
+}

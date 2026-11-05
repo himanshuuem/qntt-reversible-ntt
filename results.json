@@ -1,0 +1,267 @@
+{
+ "blocks": {
+  "Adder": {
+   "exhaustive_cases": 256,
+   "failures": 0,
+   "aer_mps_cases": 12,
+   "aer_failures": 0
+  },
+  "Subtractor": {
+   "exhaustive_cases": 256,
+   "failures": 0,
+   "aer_mps_cases": 12,
+   "aer_failures": 0
+  },
+  "Multiplier": {
+   "exhaustive_cases": 256,
+   "failures": 0,
+   "aer_mps_cases": 12,
+   "aer_failures": 0
+  },
+  "Modulo": {
+   "exhaustive_cases": 240,
+   "failures": 0,
+   "aer_mps_cases": 12,
+   "aer_failures": 0
+  }
+ },
+ "macros": {
+  "MODADD": {
+   "exhaustive_cases": 169,
+   "failures": 0,
+   "aer_cases": 6,
+   "aer_failures": 0,
+   "instances": {
+    "Adder": 2,
+    "Multiplier": 1,
+    "Modulo": 1
+   },
+   "gates": 361,
+   "qubits": 98,
+   "ccx": 120
+  },
+  "MODSUB": {
+   "exhaustive_cases": 169,
+   "failures": 0,
+   "aer_cases": 6,
+   "aer_failures": 0,
+   "instances": {
+    "Subtractor": 2,
+    "Multiplier": 1
+   },
+   "gates": 159,
+   "qubits": 51,
+   "ccx": 60
+  },
+  "MODMUL": {
+   "exhaustive_cases": 169,
+   "failures": 0,
+   "aer_cases": 6,
+   "aer_failures": 0,
+   "instances": {
+    "Multiplier": 4,
+    "Adder": 6,
+    "Modulo": 1
+   },
+   "gates": 750,
+   "qubits": 185,
+   "ccx": 272
+  }
+ },
+ "pipeline": {
+  "qubits": 4716,
+  "gates": 21240,
+  "ccx": 7600,
+  "cx": 13640,
+  "instances": {
+   "Multiplier": 104,
+   "Adder": 144,
+   "Modulo": 32,
+   "Subtractor": 24
+  },
+  "depth": 7917,
+  "classical_tests": 2004,
+  "classical_failures": 0,
+  "aer_mps": [
+   {
+    "a": [
+     3,
+     7,
+     2,
+     9
+    ],
+    "b": [
+     5,
+     0,
+     11,
+     4
+    ],
+    "got": [
+     0,
+     12,
+     1,
+     4
+    ],
+    "expected": [
+     0,
+     12,
+     1,
+     4
+    ],
+    "ok": true,
+    "seconds": 98.2
+   },
+   {
+    "a": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "b": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "got": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "expected": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "ok": true,
+    "seconds": 97.7
+   },
+   {
+    "a": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "b": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "got": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "expected": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "ok": true,
+    "seconds": 95.7
+   }
+  ],
+  "build_seconds": 0.85,
+  "t_count_7_per_toffoli": 53200,
+  "constant_qubits_set_to_1": 11
+ },
+ "superposition": {
+  "Adder": {
+   "qubits": 18,
+   "fidelity_with_expected_state": 1.0
+  },
+  "Subtractor": {
+   "qubits": 19,
+   "fidelity_with_expected_state": 1.0
+  }
+ },
+ "clifford_t": {
+  "Adder": {
+   "toffoli": 8,
+   "t_plus_tdg": 56,
+   "cx_after": 69,
+   "h": 16,
+   "depth": 99
+  },
+  "Subtractor": {
+   "toffoli": 10,
+   "t_plus_tdg": 70,
+   "cx_after": 84,
+   "h": 20,
+   "depth": 122
+  },
+  "Multiplier": {
+   "toffoli": 40,
+   "t_plus_tdg": 280,
+   "cx_after": 291,
+   "h": 80,
+   "depth": 312
+  },
+  "Modulo": {
+   "toffoli": 64,
+   "t_plus_tdg": 448,
+   "cx_after": 532,
+   "h": 128,
+   "depth": 617
+  }
+ },
+ "block_costs": {
+  "Adder": {
+   "total": 29,
+   "ccx": 8,
+   "cx": 21,
+   "x": 0,
+   "qubits_added": 6,
+   "thesis_table_I": 22
+  },
+  "Subtractor": {
+   "total": 34,
+   "ccx": 10,
+   "cx": 24,
+   "x": 0,
+   "qubits_added": 7,
+   "thesis_table_I": 30
+  },
+  "Multiplier": {
+   "total": 91,
+   "ccx": 40,
+   "cx": 51,
+   "x": 0,
+   "qubits_added": 21,
+   "thesis_table_I": 82
+  },
+  "Modulo": {
+   "total": 212,
+   "ccx": 64,
+   "cx": 148,
+   "x": 0,
+   "qubits_added": 45,
+   "thesis_table_I": 248
+  }
+ },
+ "totals": {
+  "qiskit_realisation_gates": 21240,
+  "thesis_accounting_gates": 19032,
+  "thesis_accounting_instances": {
+   "Adder": 84,
+   "Subtractor": 24,
+   "Multiplier": 104,
+   "Modulo": 32
+  },
+  "qiskit_instances": {
+   "Multiplier": 104,
+   "Adder": 144,
+   "Modulo": 32,
+   "Subtractor": 24
+  },
+  "extra_adders_vs_thesis": 60,
+  "thesis_costs_with_faithful_instances": 20352
+ }
+}

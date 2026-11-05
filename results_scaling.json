@@ -1,0 +1,642 @@
+{
+ "lu_ntt4_q5_V0": {
+  "n": 3,
+  "q": 5,
+  "v1": false,
+  "rfold": 1,
+  "qubits": 587,
+  "gates": 2352,
+  "ccx": 808,
+  "cx": 1544,
+  "x": 0,
+  "t_count": 5656,
+  "instances": {
+   "Multiplier": 16,
+   "Adder": 16,
+   "Modulo": 8,
+   "Subtractor": 8
+  },
+  "block_gates": {
+   "Multiplier": 752,
+   "Adder": 352,
+   "Modulo": 1032,
+   "Subtractor": 216
+  },
+  "ntt_exhaustive": {
+   "checked": 625,
+   "failures": 0,
+   "exhaustive": true
+  }
+ },
+ "lu_ntt4_q5_V1": {
+  "n": 3,
+  "q": 5,
+  "v1": true,
+  "rfold": 1,
+  "qubits": 238,
+  "gates": 932,
+  "ccx": 269,
+  "cx": 663,
+  "x": 0,
+  "t_count": 1883,
+  "instances": {
+   "Adder": 8,
+   "CondConst": 8,
+   "Modulo": 4,
+   "Subtractor": 8,
+   "ConstMul": 1
+  },
+  "block_gates": {
+   "Adder": 176,
+   "CondConst": 16,
+   "Modulo": 516,
+   "Subtractor": 216,
+   "ConstMul": 8
+  },
+  "ntt_exhaustive": {
+   "checked": 625,
+   "failures": 0,
+   "exhaustive": true
+  }
+ },
+ "mult_N4_q5_V0": {
+  "n": 3,
+  "q": 5,
+  "v1": false,
+  "rfold": 1,
+  "qubits": 2234,
+  "gates": 9192,
+  "ccx": 3168,
+  "cx": 6024,
+  "x": 0,
+  "t_count": 22176,
+  "instances": {
+   "Multiplier": 64,
+   "Adder": 64,
+   "Modulo": 32,
+   "Subtractor": 24
+  },
+  "block_gates": {
+   "Multiplier": 3008,
+   "Adder": 1408,
+   "Modulo": 4128,
+   "Subtractor": 648
+  },
+  "N": 4,
+  "omega": 2,
+  "build_s": 0.3,
+  "pipeline": {
+   "checked": 390625,
+   "failures": 0,
+   "exhaustive": true
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0
+  },
+  "verify_s": 0.5
+ },
+ "mult_N4_q5_V1": {
+  "n": 3,
+  "q": 5,
+  "v1": true,
+  "rfold": 1,
+  "qubits": 946,
+  "gates": 3759,
+  "ccx": 1111,
+  "cx": 2648,
+  "x": 0,
+  "t_count": 7777,
+  "instances": {
+   "Adder": 32,
+   "CondConst": 24,
+   "Modulo": 16,
+   "Subtractor": 24,
+   "ConstMul": 11,
+   "Multiplier": 4
+  },
+  "block_gates": {
+   "Adder": 704,
+   "CondConst": 48,
+   "Modulo": 2064,
+   "Subtractor": 648,
+   "ConstMul": 107,
+   "Multiplier": 188
+  },
+  "N": 4,
+  "omega": 2,
+  "build_s": 0.1,
+  "pipeline": {
+   "checked": 390625,
+   "failures": 0,
+   "exhaustive": true
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 0.2
+ },
+ "mult_N4_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "v1": true,
+  "rfold": 4,
+  "qubits": 2628,
+  "gates": 11246,
+  "ccx": 3151,
+  "cx": 8095,
+  "x": 0,
+  "t_count": 22057,
+  "instances": {
+   "Adder": 56,
+   "CondConst": 24,
+   "Modulo": 16,
+   "Subtractor": 24,
+   "ConstMul": 23,
+   "Multiplier": 4
+  },
+  "block_gates": {
+   "Adder": 2016,
+   "CondConst": 96,
+   "Modulo": 5040,
+   "Subtractor": 984,
+   "ConstMul": 2514,
+   "Multiplier": 596
+  },
+  "N": 4,
+  "omega": 4,
+  "build_s": 0.5,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 0.7
+ },
+ "mult_N4_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "v1": false,
+  "rfold": 4,
+  "qubits": 7506,
+  "gates": 36164,
+  "ccx": 13228,
+  "cx": 22936,
+  "x": 0,
+  "t_count": 92596,
+  "instances": {
+   "Multiplier": 124,
+   "Adder": 184,
+   "Modulo": 32,
+   "Subtractor": 24
+  },
+  "block_gates": {
+   "Multiplier": 18476,
+   "Adder": 6624,
+   "Modulo": 10080,
+   "Subtractor": 984
+  },
+  "N": 4,
+  "omega": 4,
+  "build_s": 1.5,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0
+  },
+  "verify_s": 1.8
+ },
+ "mult_N8_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "v1": true,
+  "rfold": 4,
+  "qubits": 6728,
+  "gates": 28878,
+  "ccx": 8159,
+  "cx": 20719,
+  "x": 0,
+  "t_count": 57113,
+  "instances": {
+   "Adder": 136,
+   "CondConst": 72,
+   "Modulo": 44,
+   "Subtractor": 72,
+   "ConstMul": 55,
+   "Multiplier": 8
+  },
+  "block_gates": {
+   "Adder": 4896,
+   "CondConst": 288,
+   "Modulo": 13860,
+   "Subtractor": 2952,
+   "ConstMul": 5690,
+   "Multiplier": 1192
+  },
+  "N": 8,
+  "omega": 2,
+  "build_s": 2.7,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 2.9
+ },
+ "mult_N8_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "v1": false,
+  "rfold": 4,
+  "qubits": 20217,
+  "gates": 97708,
+  "ccx": 35684,
+  "cx": 62024,
+  "x": 0,
+  "t_count": 249788,
+  "instances": {
+   "Multiplier": 332,
+   "Adder": 488,
+   "Modulo": 88,
+   "Subtractor": 72
+  },
+  "block_gates": {
+   "Multiplier": 49468,
+   "Adder": 17568,
+   "Modulo": 27720,
+   "Subtractor": 2952
+  },
+  "N": 8,
+  "omega": 2,
+  "build_s": 9.3,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0
+  },
+  "verify_s": 9.8
+ },
+ "mult_N16_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "v1": true,
+  "rfold": 4,
+  "qubits": 16375,
+  "gates": 70173,
+  "ccx": 19982,
+  "cx": 50191,
+  "x": 0,
+  "t_count": 139874,
+  "instances": {
+   "Adder": 320,
+   "CondConst": 192,
+   "Modulo": 112,
+   "Subtractor": 192,
+   "ConstMul": 131,
+   "Multiplier": 16
+  },
+  "block_gates": {
+   "Adder": 11520,
+   "CondConst": 768,
+   "Modulo": 35280,
+   "Subtractor": 7872,
+   "ConstMul": 12349,
+   "Multiplier": 2384
+  },
+  "N": 16,
+  "omega": 3,
+  "build_s": 14.1,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 14.6
+ },
+ "mult_N16_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "v1": false,
+  "rfold": 4,
+  "qubits": 50874,
+  "gates": 246176,
+  "ccx": 89824,
+  "cx": 156352,
+  "x": 0,
+  "t_count": 628768,
+  "instances": {
+   "Multiplier": 832,
+   "Adder": 1216,
+   "Modulo": 224,
+   "Subtractor": 192
+  },
+  "block_gates": {
+   "Multiplier": 123968,
+   "Adder": 43776,
+   "Modulo": 70560,
+   "Subtractor": 7872
+  },
+  "N": 16,
+  "omega": 3,
+  "pipeline": {
+   "checked": 16384,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components_checked_at": "N=4/8 (same q=17, n=5 blocks)"
+ },
+ "mult_N4_q97_V1": {
+  "n": 7,
+  "q": 97,
+  "v1": true,
+  "rfold": 4,
+  "qubits": 5755,
+  "gates": 26943,
+  "ccx": 6900,
+  "cx": 20043,
+  "x": 0,
+  "t_count": 48300,
+  "instances": {
+   "Adder": 56,
+   "CondConst": 24,
+   "Modulo": 16,
+   "Subtractor": 24,
+   "ConstMul": 23,
+   "Multiplier": 4
+  },
+  "block_gates": {
+   "Adder": 2800,
+   "CondConst": 120,
+   "Modulo": 9296,
+   "Subtractor": 1320,
+   "ConstMul": 12179,
+   "Multiplier": 1228
+  },
+  "N": 4,
+  "omega": 22,
+  "build_s": 2.9,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 7.0
+ },
+ "mult_N4_q97_V0": {
+  "n": 7,
+  "q": 97,
+  "v1": false,
+  "rfold": 4,
+  "qubits": 12909,
+  "gates": 67180,
+  "ccx": 25052,
+  "cx": 42128,
+  "x": 0,
+  "t_count": 175364,
+  "instances": {
+   "Multiplier": 124,
+   "Adder": 184,
+   "Modulo": 32,
+   "Subtractor": 24
+  },
+  "block_gates": {
+   "Multiplier": 38068,
+   "Adder": 9200,
+   "Modulo": 18592,
+   "Subtractor": 1320
+  },
+  "N": 4,
+  "omega": 22,
+  "build_s": 2.7,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0
+  },
+  "verify_s": 6.6
+ },
+ "mult_N8_q97_V1": {
+  "n": 7,
+  "q": 97,
+  "v1": true,
+  "rfold": 4,
+  "qubits": 14803,
+  "gates": 68208,
+  "ccx": 17848,
+  "cx": 50360,
+  "x": 0,
+  "t_count": 124936,
+  "instances": {
+   "Adder": 136,
+   "CondConst": 72,
+   "Modulo": 44,
+   "Subtractor": 72,
+   "ConstMul": 55,
+   "Multiplier": 8
+  },
+  "block_gates": {
+   "Adder": 6800,
+   "CondConst": 360,
+   "Modulo": 25564,
+   "Subtractor": 3960,
+   "ConstMul": 29068,
+   "Multiplier": 2456
+  },
+  "N": 8,
+  "omega": 33,
+  "build_s": 15.7,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0,
+   "ConstMul(all w)": 0
+  },
+  "verify_s": 20.0
+ },
+ "mult_N8_q97_V0": {
+  "n": 7,
+  "q": 97,
+  "v1": false,
+  "rfold": 4,
+  "qubits": 34785,
+  "gates": 181412,
+  "ccx": 67540,
+  "cx": 113872,
+  "x": 0,
+  "t_count": 472780,
+  "instances": {
+   "Multiplier": 332,
+   "Adder": 488,
+   "Modulo": 88,
+   "Subtractor": 72
+  },
+  "block_gates": {
+   "Multiplier": 101924,
+   "Adder": 24400,
+   "Modulo": 51128,
+   "Subtractor": 3960
+  },
+  "N": 8,
+  "omega": 33,
+  "build_s": 17.9,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  },
+  "components": {
+   "Adder": 0,
+   "Subtractor": 0,
+   "Multiplier": 0,
+   "Modulo": 0,
+   "MODADD": 0,
+   "MODSUB": 0,
+   "MODMUL": 0
+  },
+  "verify_s": 22.3
+ },
+ "lookup_vs_width": {
+  "3": {
+   "q": 5,
+   "lookup_gates_mean": 7,
+   "lookup_gates_min": 7,
+   "lookup_gates_max": 8,
+   "generic_modmul_gates": 267,
+   "ratio_pct": 2.7,
+   "rfold": 1
+  },
+  "4": {
+   "q": 13,
+   "lookup_gates_mean": 31,
+   "lookup_gates_min": 16,
+   "lookup_gates_max": 40,
+   "generic_modmul_gates": 750,
+   "ratio_pct": 4.2,
+   "rfold": 3
+  },
+  "5": {
+   "q": 17,
+   "lookup_gates_mean": 68,
+   "lookup_gates_min": 60,
+   "lookup_gates_max": 73,
+   "generic_modmul_gates": 1348,
+   "ratio_pct": 5.0,
+   "rfold": 4
+  },
+  "6": {
+   "q": 61,
+   "lookup_gates_mean": 253,
+   "lookup_gates_min": 215,
+   "lookup_gates_max": 317,
+   "generic_modmul_gates": 1580,
+   "ratio_pct": 16.0,
+   "rfold": 3
+  },
+  "7": {
+   "q": 97,
+   "lookup_gates_mean": 490,
+   "lookup_gates_min": 401,
+   "lookup_gates_max": 559,
+   "generic_modmul_gates": 2516,
+   "ratio_pct": 19.5,
+   "rfold": 4
+  },
+  "8": {
+   "q": 251,
+   "lookup_gates_mean": 1136,
+   "lookup_gates_min": 938,
+   "lookup_gates_max": 1340,
+   "generic_modmul_gates": 2714,
+   "ratio_pct": 41.9,
+   "rfold": 3
+  }
+ }
+}

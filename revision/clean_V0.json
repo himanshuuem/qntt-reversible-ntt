@@ -1,0 +1,15 @@
+{
+ "variant": "V0",
+ "checked": 815730721,
+ "total": 815730721,
+ "complete": true,
+ "failures": {
+  "output": 0,
+  "input": 0,
+  "constant": 0,
+  "ancilla": 0
+ },
+ "seconds": 444.6,
+ "qubits": 4732,
+ "gates": 42496
+}

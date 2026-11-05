@@ -1,0 +1,11 @@
+{
+ "next_chunk": 778,
+ "checked": 815730721,
+ "fails": 0,
+ "seconds": 243.99938011169434,
+ "total_space": 815730721,
+ "complete": true,
+ "variant": "v1",
+ "qubits": 1615,
+ "gates": 6545
+}

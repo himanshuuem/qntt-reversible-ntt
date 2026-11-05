@@ -1,0 +1,58 @@
+{
+ "V0": {
+  "qubits": 4716,
+  "gates": 21240,
+  "toffoli": 7600,
+  "depth": 7917,
+  "toffoli_depth": 2989,
+  "check_garbage_kept": {
+   "tests": 65536,
+   "output_failures": 0,
+   "input_restore_failures": 0,
+   "constant_restore_failures": 0
+  },
+  "clean": {
+   "qubits": 4732,
+   "gates": 42496,
+   "toffoli": 15200,
+   "depth": 15835,
+   "toffoli_depth": 5978,
+   "check": {
+    "tests": 65536,
+    "output_failures": 0,
+    "input_restore_failures": 0,
+    "constant_restore_failures": 0,
+    "ancilla_not_clean": 0
+   }
+  },
+  "seconds": 0.8
+ },
+ "V1": {
+  "qubits": 1615,
+  "gates": 6545,
+  "toffoli": 1951,
+  "depth": 2249,
+  "toffoli_depth": 844,
+  "check_garbage_kept": {
+   "tests": 65536,
+   "output_failures": 0,
+   "input_restore_failures": 0,
+   "constant_restore_failures": 0
+  },
+  "clean": {
+   "qubits": 1631,
+   "gates": 13106,
+   "toffoli": 3902,
+   "depth": 4499,
+   "toffoli_depth": 1688,
+   "check": {
+    "tests": 65536,
+    "output_failures": 0,
+    "input_restore_failures": 0,
+    "constant_restore_failures": 0,
+    "ancilla_not_clean": 0
+   }
+  },
+  "seconds": 0.2
+ }
+}
