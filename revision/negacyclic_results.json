@@ -1,0 +1,330 @@
+{
+ "components_n5_q17": {
+  "Adder": 0,
+  "Subtractor": 0,
+  "Multiplier": 0,
+  "Modulo": 0,
+  "MODADD": 0,
+  "MODSUB": 0,
+  "MODMUL": 0,
+  "ConstMul(all w)": 0
+ },
+ "components_n7_q97": {
+  "Adder": 0,
+  "Subtractor": 0,
+  "Multiplier": 0,
+  "Modulo": 0,
+  "MODADD": 0,
+  "MODSUB": 0,
+  "MODMUL": 0,
+  "ConstMul(all w)": 0
+ },
+ "cyc_N4_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "qubits": 7506,
+  "gates": 36164,
+  "ccx": 13228,
+  "cx": 22936,
+  "t_count": 92596,
+  "depth": 14228,
+  "toffoli_depth": 5436,
+  "N": 4,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "cyc_N4_q17_V0prime": {
+  "n": 5,
+  "q": 17,
+  "qubits": 5008,
+  "gates": 24032,
+  "ccx": 8728,
+  "cx": 15304,
+  "t_count": 61096,
+  "depth": 7986,
+  "toffoli_depth": 3058,
+  "N": 4,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "cyc_N4_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "qubits": 2628,
+  "gates": 11246,
+  "ccx": 3151,
+  "cx": 8095,
+  "t_count": 22057,
+  "depth": 3363,
+  "toffoli_depth": 1281,
+  "N": 4,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "qubits": 7516,
+  "gates": 36164,
+  "ccx": 13228,
+  "cx": 22936,
+  "t_count": 92596,
+  "depth": 13390,
+  "toffoli_depth": 5153,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 2,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q17_lookup": {
+  "n": 5,
+  "q": 17,
+  "qubits": 3427,
+  "gates": 15516,
+  "ccx": 5516,
+  "cx": 10000,
+  "t_count": 38612,
+  "depth": 4771,
+  "toffoli_depth": 1838,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 2,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q17_lookup_sel": {
+  "n": 5,
+  "q": 17,
+  "qubits": 2779,
+  "gates": 12036,
+  "ccx": 3956,
+  "cx": 8080,
+  "t_count": 27692,
+  "depth": 4431,
+  "toffoli_depth": 1706,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 2,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "qubits": 2838,
+  "gates": 11796,
+  "ccx": 3316,
+  "cx": 8480,
+  "t_count": 23212,
+  "depth": 3460,
+  "toffoli_depth": 1326,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 2,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "cyc_N8_q17_V0prime": {
+  "n": 5,
+  "q": 17,
+  "qubits": 14395,
+  "gates": 69400,
+  "ccx": 25184,
+  "cx": 44216,
+  "t_count": 176288,
+  "depth": 22774,
+  "toffoli_depth": 8738,
+  "N": 8,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N8_q17_V0": {
+  "n": 5,
+  "q": 17,
+  "qubits": 20252,
+  "gates": 97708,
+  "ccx": 35684,
+  "cx": 62024,
+  "t_count": 249788,
+  "depth": 35010,
+  "toffoli_depth": 13495,
+  "N": 8,
+  "ring": "negacyclic",
+  "psi": 3,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N8_q17_V1": {
+  "n": 5,
+  "q": 17,
+  "qubits": 7232,
+  "gates": 30088,
+  "ccx": 8558,
+  "cx": 21530,
+  "t_count": 59906,
+  "depth": 8158,
+  "toffoli_depth": 3123,
+  "N": 8,
+  "ring": "negacyclic",
+  "psi": 3,
+  "pipeline": {
+   "checked": 65536,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "cyc_N4_q97_V0prime": {
+  "n": 7,
+  "q": 97,
+  "qubits": 8609,
+  "gates": 44536,
+  "ccx": 16484,
+  "cx": 28052,
+  "t_count": 115388,
+  "depth": 14636,
+  "toffoli_depth": 5680,
+  "N": 4,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q97_V0": {
+  "n": 7,
+  "q": 97,
+  "qubits": 12930,
+  "gates": 67180,
+  "ccx": 25052,
+  "cx": 42128,
+  "t_count": 175364,
+  "depth": 24922,
+  "toffoli_depth": 9709,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 33,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N4_q97_V1": {
+  "n": 7,
+  "q": 97,
+  "qubits": 6814,
+  "gates": 31045,
+  "ccx": 7896,
+  "cx": 23149,
+  "t_count": 55272,
+  "depth": 7538,
+  "toffoli_depth": 2729,
+  "N": 4,
+  "ring": "negacyclic",
+  "psi": 33,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "cyc_N8_q97_V0prime": {
+  "n": 7,
+  "q": 97,
+  "qubits": 24761,
+  "gates": 128576,
+  "ccx": 47548,
+  "cx": 81028,
+  "t_count": 332836,
+  "depth": 40186,
+  "toffoli_depth": 15609,
+  "N": 8,
+  "ring": "cyclic",
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N8_q97_V0": {
+  "n": 7,
+  "q": 97,
+  "qubits": 34827,
+  "gates": 181412,
+  "ccx": 67540,
+  "cx": 113872,
+  "t_count": 472780,
+  "depth": 62554,
+  "toffoli_depth": 24387,
+  "N": 8,
+  "ring": "negacyclic",
+  "psi": 8,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ },
+ "nega_N8_q97_V1": {
+  "n": 7,
+  "q": 97,
+  "qubits": 17223,
+  "gates": 77293,
+  "ccx": 20121,
+  "cx": 57172,
+  "t_count": 140847,
+  "depth": 15330,
+  "toffoli_depth": 5779,
+  "N": 8,
+  "ring": "negacyclic",
+  "psi": 8,
+  "pipeline": {
+   "checked": 32768,
+   "failures": 0,
+   "input_restore_failures": 0,
+   "exhaustive": false
+  }
+ }
+}
