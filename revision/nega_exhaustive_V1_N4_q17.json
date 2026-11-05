@@ -1,0 +1,13 @@
+{
+ "checked": 6975757441,
+ "failures": 0,
+ "input_restore_failures": 0,
+ "exhaustive": true,
+ "variant": "V1",
+ "N": 4,
+ "q": 17,
+ "ring": "negacyclic",
+ "gates": 11796,
+ "qubits": 2838,
+ "seconds": 1524.5
+}
